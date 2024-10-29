@@ -1,14 +1,14 @@
-name: Build Docker Image
+name: Build books-universium
 
 on:
   push:
     branches: ["main"]
     paths:
-      - "books/**"
+      - "books-universium/**"
   pull_request:
     branches: ["main"]
     paths:
-      - "books/**"
+      - "books-universium/**"
 
 env:
   REGISTRY: ghcr.io
@@ -47,7 +47,7 @@ jobs:
         id: push
         uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
         with:
-          context: .
+          context: books-universium
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
