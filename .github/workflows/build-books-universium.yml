@@ -39,6 +39,7 @@ jobs:
         run: |
           VERSION=$(python -c 'exec(open("${{ env.APP_PATH }}/__version__.py").read()); print(__version__)')
           echo "IMAGE_VERSION=$VERSION" >> $GITHUB_ENV
+          echo "Current version will be v$VERSION"
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
