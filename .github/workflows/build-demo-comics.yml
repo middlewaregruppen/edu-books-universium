@@ -12,8 +12,8 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: middlewaregruppen/books-universium
-  IMAGE_VERSION: 0.1.1
+  IMAGE_NAME: middlewaregruppen/demo-comics
+  IMAGE_VERSION: 0.21
 
 jobs:
   build-and-push-image:
