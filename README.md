@@ -1,4 +1,4 @@
-# 🐳 Some Dockerised Python apps
+# 📚 Python apps for training
 
 In this repo we have a few demo apps written in Python that were designed to be
 used in training environments.
